@@ -54,14 +54,14 @@ function getCookie(cname) {
     }
     return "";
 }
-//receipt calculator 
+
 function calculateReceipt(){
   var receiptSubtotal, receiptTax, receiptTotal;
   receiptSubtotal = Number(getCookie("preTax"));
   receiptTax = receiptSubtotal*.075;
   receiptTotal = receiptSubtotal+receiptTax;
-  document.getElementById("sub").innerHTML="$"+receiptSubtotal;
-  document.getElementById("tax").innerHTML="$"+receiptTax;
-  document.getElementById("tot").innerHTML="$"+receiptTotal;
+  document.getElementById("sub").innerHTML="$"+receiptSubtotal.toFixed(2);
+  document.getElementById("tax").innerHTML="$"+receiptTax.toFixed(2);
+  document.getElementById("tot").innerHTML="$"+receiptTotal.toFixed(2);
 
 }
