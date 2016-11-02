@@ -54,6 +54,7 @@ function getCookie(cname) {
     }
     return "";
 }
+//receipt calculator 
 function calculateReceipt(){
   var receiptSubtotal, receiptTax, receiptTotal;
   receiptSubtotal = Number(getCookie("preTax"));
